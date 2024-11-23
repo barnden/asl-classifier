@@ -17,7 +17,7 @@ def preprocess_image(directory, color_file, target_size=(64, 64)):
     # threshold = img.filter(ImageFilter.FIND_EDGES)
     # threshold = np.array(threshold, dtype=np.float64)[..., :1] / 255
 
-    img = np.array(img, dtype=np.float32) / 255
+    img = np.array(img, dtype=np.uint8)
     # depth = np.array(depth, dtype=np.float64)
 
     # depth -= depth.min()
